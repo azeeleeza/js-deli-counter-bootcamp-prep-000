@@ -5,12 +5,13 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
-    console.log(line)
     if (line.length) {
         return "Currently serving " + line[0] + "."
     } else {
         return "There is nobody waiting to be served!"
     }
+    
+        line.shift()
 }
 
 function currentLine(line) {
