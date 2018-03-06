@@ -18,7 +18,11 @@ function currentLine(line) {
         return "The line is currently empty."
     } else {
         for (let i = 0; i < line.length; i++) {
-            current += i+1 + ". " + line[i] + ", "
+            if(i===0){
+              current += i+1 + ". " + line[i]
+            } else {
+            current += ", " + i+1 + ". " + line[i]
+          }
         }
         return current
     }
