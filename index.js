@@ -6,7 +6,7 @@ function takeANumber(line, name) {
 
 function nowServing(line) {
     if (line.length) {
-        return "Currently Serving " + line[0]
+        return "Currently serving " + line[0]
     } else {
         return "There is nobody waiting to be served!"
     }
@@ -18,7 +18,7 @@ function currentLine(line) {
         return "The line is currently empty."
     } else {
         for (let i = 0; i < line.length; i++) {
-            current += i + 1 + ". " + line[1] + ", "
+            current += i + ". " + line[1] + ", "
         }
         return current
     }
