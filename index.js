@@ -17,7 +17,7 @@ function currentLine(line) {
     if (!line.length) {
         return "The line is currently empty."
     } else {
-        for (i = 0; i < line.length; i++) {
+        for (let i = 0; i < line.length; i++) {
             current += i + 1 + ". " + line[1] + ", "
         }
     }
