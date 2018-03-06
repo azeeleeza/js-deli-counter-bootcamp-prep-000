@@ -5,7 +5,6 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
-    line.shift()
     console.log(line)
     if (line.length) {
         return "Currently serving " + line[0] + "."
