@@ -21,7 +21,7 @@ function currentLine(line) {
             if(i==0){
               current += i+1 + ". " + line[i]
             } else {
-            current += ", " + i+1 + ". " + line[i]
+            current += ", " + parseInt(i + 1) + ". " + line[i]
           }
         }
         return current
